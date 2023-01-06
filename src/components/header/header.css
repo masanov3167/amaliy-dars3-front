@@ -1,0 +1,48 @@
+@keyframes wiggle{
+  0%{transform: scale(1.1);}
+  10%{transform: rotate(10deg);}
+  20%{transform: rotate(20deg);}
+  30%{transform: rotate(10deg);}
+  40%{transform: rotate(0deg);}
+  50%{transform: rotate(-10deg);}
+  60%{transform: rotate(-20deg);}
+  70%{transform: rotate(10deg);}
+  83%{transform: rotate(0deg);}
+  90%{transform: translate(0);}
+  100%{transform: scale(1);}
+}
+
+  body{
+    transition: all .5s ease-in-out;
+  }
+   
+.header{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 10px;
+    position: sticky;
+    padding: 10px;
+    border-radius: 10px;
+    background: rgba(197, 198, 206, 0.96);
+    -webkit-backdrop-filter: saturate(200%) blur(6px);
+    backdrop-filter: saturate(200%) blur(6px);
+    box-shadow: 18px 20px 10.3px -23px rgba(0, 0, 0, 0.15);
+    z-index: 3;
+    margin-bottom: 25px;
+    transition: all 0.5s ease-in-out;
+}
+
+.header__nav{
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__nav__item{
+    margin: 0 10px;
+    text-decoration: none;
+}
