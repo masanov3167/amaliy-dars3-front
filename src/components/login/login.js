@@ -67,7 +67,7 @@ const Login = () =>{
                 </form>
 
                 <div className="row ms-1 me-1 mt-3 d-flex justify-content-between">
-                    <Link className="col-5 btn btn-info mb-2" to='/login'>Register</Link>
+                    <Link className="col-5 btn btn-info mb-2" to='/register'>Register</Link>
                     <Link className="col-5 btn btn-primary  mb-2" to='/'>Bosh menyu</Link>
                 </div>
             </div>

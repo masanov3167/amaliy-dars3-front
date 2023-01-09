@@ -99,7 +99,7 @@ const Main = () => {
                 data.data.map((e, index) => (
                   <div key={index} className="col-3 mb-3">
                       <div className="users__list__item">
-                            <img onError={() => setImgError([...imgError,e.id])} src={imgError.some(a => a === e._id) ? 'https://www.dingwallmedicalgroup.co.uk/website/S55376/files/Photo%20Unavailable.jpg' : e.pic} alt={`${e.name}'s img`} />
+                            <img onError={() => setImgError([...imgError,e._id])} src={imgError.some(a => a === e._id) ? 'https://www.dingwallmedicalgroup.co.uk/website/S55376/files/Photo%20Unavailable.jpg' : e.pic} alt={`${e.name}'s img`} />
                             <h4>{e[`name`]}</h4>
                             <h4>{e[`about`]}</h4>
                             <h5>{e.category_id.name}</h5>
